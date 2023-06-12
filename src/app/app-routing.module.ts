@@ -16,7 +16,8 @@ const routes: Routes = [
       { path:"Edit/:id" , component:AddcontactComponent}
 
     ]
-  }
+  },
+  { path: "Access" , loadChildren :() => import ('./access/access.module').then( opt => opt.AccessModule ) }
 ];
 
 @NgModule({
