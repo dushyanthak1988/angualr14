@@ -17,7 +17,8 @@ const routes: Routes = [
 
     ]
   },
-  { path: "Access" , loadChildren :() => import ('./access/access.module').then( opt => opt.AccessModule ) }
+  { path: "Access" , loadChildren :() => import ('./access/access.module').then( opt => opt.AccessModule ) },
+  { path : "Login" , loadComponent: () => import ('./login/login.component').then (opt => opt.LoginComponent) }
 ];
 
 @NgModule({
