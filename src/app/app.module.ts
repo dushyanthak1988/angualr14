@@ -11,6 +11,7 @@ import { StatusComponent } from './status/status.component';
 import { AddcontactComponent } from './addcontact/addcontact.component';
 import { FormsModule } from '@angular/forms';
 import { NgSwitchexampleComponent } from './ng-switchexample/ng-switchexample.component';
+import { ExampleComponent } from './example/example.component';
 //import { AccessRoutingModule } from './access/access-routing.module';
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NgSwitchexampleComponent } from './ng-switchexample/ng-switchexample.co
     ContactComponent,
     StatusComponent,
     AddcontactComponent,
-    NgSwitchexampleComponent
+    NgSwitchexampleComponent,
+    ExampleComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AddcontactComponent } from './addcontact/addcontact.component';
 import { StatusComponent } from './status/status.component';
 import { NgSwitchexampleComponent } from './ng-switchexample/ng-switchexample.component';
+import { ExampleComponent } from './example/example.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: "Login", loadComponent: () => import('./login/login.component').then(opt => opt.LoginComponent) },
   
   { path: "switchexample", component: NgSwitchexampleComponent },
+  { path: "example" , component:ExampleComponent},
   { path: "**", component: StatusComponent } 
 ];
 

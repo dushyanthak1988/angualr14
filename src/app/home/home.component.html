@@ -1,16 +1,23 @@
-<h2 [ngStyle]="stylevalue" > {{headername | uppercase}}</h2>>
-
-<h2 *ngIf="salary>0"  [ngClass]="className" > My Salary is {{ salary| percent }}</h2>
  
-<button (click)="functionclick()"> click me  </button>
-<br>
-<input [value]="isdisabled" [disabled]="isdisabled" #txt (change)="functionclick1(txt.value)" />
+<h1>Hey! Good Morning </h1>
 
-<br>
-<br>
-<input [(ngModel)]="headername" /> 
+<div *ngSwitch= "day">
 
-<ul>
-   <li *ngFor="let item of colors" style="color: {{item}};" >{{item}} </li>
+<div *NgSwitchCase = 0>Today is Sunday! You deserve a break</div>
 
-</ul>
+<div *NgSwitchCase = '1'><h3>Today is Monday, Hope you have productive Week</h3></div>
+
+<div *NgSwitchCase = '2'><h3>Today is Tuesday, Smash your Goals</h3></div>
+
+<div *NgSwitchCase = '3'><h3>Today is Wednesday, You're already half way through</h3></div>
+
+<div *NgSwitchCase = '4'><h3>Today is Thursday, It's like Friday Lite</h3></div>
+
+<div *NgSwitchCase = '5'><h3>Today is Friday, TGIF!!!</h3></div>
+
+<div *NgSwitchCase = '6'><h3>Today is Saturday, Let's Party!! :) </h3></div>
+
+<div *NgSwitchDefault>Uh oh! Somethings wrong</div>
+
+</div>
+

@@ -1,0 +1,19 @@
+<p>example works!</p>
+
+
+<h2 [ngStyle]="stylevalue" > {{headername | uppercase}}</h2>>
+
+<h2 *ngIf="salary>0"  [ngClass]="className" > My Salary is {{ salary| percent }}</h2>
+ 
+<button (click)="functionclick()"> click me  </button>
+<br>
+<input [value]="isdisabled" [disabled]="isdisabled" #txt (change)="functionclick1(txt.value)" />
+
+<br>
+<br>
+<input [(ngModel)]="headername" /> 
+
+<ul>
+   <li *ngFor="let item of colors" style="color: {{item}}" >{{item}} </li>
+
+</ul>
