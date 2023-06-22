@@ -12,6 +12,7 @@ import { AddcontactComponent } from './addcontact/addcontact.component';
 import { FormsModule } from '@angular/forms';
 import { NgSwitchexampleComponent } from './ng-switchexample/ng-switchexample.component';
 import { ExampleComponent } from './example/example.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import { AccessRoutingModule } from './access/access-routing.module';
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ExampleComponent } from './example/example.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
     //LoginComponent,
 
     // AccessRoutingModule
