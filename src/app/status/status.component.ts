@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
       
   `,
   styles: [
-    "h4{ Color:red; font-size:50px} "
+    "h4{ Color:red; font-size:50    px} "
   ]
 })
 export class StatusComponent implements OnInit {
