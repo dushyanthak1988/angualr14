@@ -5,8 +5,10 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AddcontactComponent } from './addcontact/addcontact.component';
 import { StatusComponent } from './status/status.component';
+import { NgSwitchexampleComponent } from './ng-switchexample/ng-switchexample.component';
 
 const routes: Routes = [
+  { path: "", component: HomeComponent },
   { path: "Home", component: HomeComponent },
   { path: "About", component: AboutComponent },
   {
@@ -20,8 +22,9 @@ const routes: Routes = [
   },
   { path: "Access", loadChildren: () => import('./access/access.module').then(opt => opt.AccessModule) },
   { path: "Login", loadComponent: () => import('./login/login.component').then(opt => opt.LoginComponent) },
-  { path: "**", component: StatusComponent }
-
+  
+  { path: "switchexample", component: NgSwitchexampleComponent },
+  { path: "**", component: StatusComponent } 
 ];
 
 @NgModule({

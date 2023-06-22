@@ -7,9 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { StatusComponent } from './status/status.component';
-import { LoginComponent } from './login/login.component';
+//import { LoginComponent } from './login/login.component';
 import { AddcontactComponent } from './addcontact/addcontact.component';
 import { FormsModule } from '@angular/forms';
+import { NgSwitchexampleComponent } from './ng-switchexample/ng-switchexample.component';
 //import { AccessRoutingModule } from './access/access-routing.module';
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     ContactComponent,
     StatusComponent,
-    AddcontactComponent
+    AddcontactComponent,
+    NgSwitchexampleComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule
     //LoginComponent,
 
-   // AccessRoutingModule
+    // AccessRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
